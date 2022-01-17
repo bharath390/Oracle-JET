@@ -1,0 +1,61 @@
+<!--
+ Copyright (c) 2014, 2021, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>New Customer form</h1>
+  <div>
+      <div class="oj-flex">
+        <div class="oj-panel oj-panel-alt4 oj-flex-item oj-margin">
+          <div class="oj-panel oj-panel-alt4 oj-flex-item oj-margin">
+          <oj-form-layout id="ofl1" label-edge="inside"  max-columns="3" direction="row">
+            <oj-label-value>
+              <oj-label slot="label" for="basicInfo">Basic Information</oj-label>
+            <oj-input-text id="name" slot="value" label-hint="name"></oj-input-text>
+            <oj-input-text id="username" slot="value" label-hint="user name"></oj-input-text>
+            <oj-input-text id="email" slot="value" label-hint="email"></oj-input-text>
+            <oj-input-text id="phone" slot="value" label-hint="phone"></oj-input-text>
+            <oj-input-text id="website" slot="value" label-hint="website"></oj-input-text>
+          </oj-label-value>
+            </oj-form-layout>
+            </div>
+            <div class="oj-panel oj-panel-alt4 oj-flex-item oj-margin">
+              <h6>Address</h6>
+              <oj-form-layout id="ofl1" label-edge="inside"  max-columns="3" direction="row">
+                <oj-label-value>
+                  <oj-label slot="label" for="Address">Address</oj-label>
+                <oj-input-text id="street" slot="value" label-hint="street"></oj-input-text>
+                <oj-input-text id="suite" slot="value" label-hint="suite"></oj-input-text>
+                <oj-input-text id="city" slot="value" label-hint="city"></oj-input-text>
+                <oj-input-text id="zipcode" slot="value" label-hint="zipcode"></oj-input-text>
+              </oj-label-value>
+                </oj-form-layout>
+            </div>
+            <div class="oj-panel oj-panel-alt4 oj-flex-item oj-margin">
+              <h6>company</h6>
+              <oj-form-layout id="ofl1" label-edge="inside"  max-columns="3" direction="row">
+                <oj-label-value>
+                  <oj-label slot="label" for="company">company</oj-label>
+                <oj-input-text id="compName" slot="value" label-hint="name"></oj-input-text>
+                <oj-input-text id="catch" slot="value" label-hint="catchPhrase"></oj-input-text>
+                <oj-input-text id="bs" slot="value" label-hint="bs"></oj-input-text>
+              </oj-label-value>
+                </oj-form-layout>
+            </div>
+
+            <oj-button slot="value" id="saveBtn" on-oj-action="[[addCustomer]]" label='Add Customer'></oj-button>
+
+
+        </div>
+        
+      </div>
+  </div>
+</div> 
+<!--
+<oj-form-layout id="ofl1" label-edge="inside"  max-columns="3" direction="row">
+<oj-input-text id="f1" label-hint="Field 1"></oj-input-text>
+<oj-input-text id="f2" label-hint="Field 2"></oj-input-text>
+<oj-input-text id="f3" label-hint="Field 3"></oj-input-text>
+</oj-form-layout>
+-->

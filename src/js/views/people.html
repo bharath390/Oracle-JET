@@ -1,0 +1,14 @@
+<h1>Welcome people</h1>
+
+<div class="demo-card-container">
+<oj-list-view id="listview" aria-label="list to show selection features" class="oj-listview-item-padding-off"
+                  data="[[dataSource]]">
+                  <template slot="itemTemplate" data-oj-as="item">
+                        <span class="oj-typography-body-md oj-text-color-primary">
+                           <h4> <oj-bind-text value="[[item.data.name]]"></oj-bind-text></h4>
+                           <oj-bind-text value="[[item.data.company.name]]"></oj-bind-text>
+                        </span>
+
+                  </template>
+                </oj-list-view> 
+            </div>
